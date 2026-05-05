@@ -1,0 +1,411 @@
+{
+  "meta": {
+    "version": "1.0",
+    "description": "恋爱心理学完整知识库 - 用于恋爱军师Skill的分析参考",
+    "authority_levels": {
+      "5": "同行评审顶刊实证研究/元分析，可直接作为权威论据",
+      "4": "同行评审期刊/权威学术综述，可作为核心参考",
+      "3": "经核实的学术理论或研究机构专业出版物，可作为背景运用",
+      "2": "科普来源或通俗总结，适合作为轻松话题与引入",
+      "1": "生活观察/通俗分析，仅供参考"
+    }
+  },
+  "part1_attachment": {
+    "title": "依恋理论与人格底层框架",
+    "description": "整个知识库的路由器，后面几乎所有关于聊天、性格、决策的分析都会回到依恋类型与人格特质上",
+    "attachment_types": {
+      "secure": {
+        "name": "安全型",
+        "core_traits": ["信任他人", "自我价值感稳定"],
+        "relationship_behavior": ["能健康依赖，也能安心独处", "沟通坦诚", "冲突后修复能力强"],
+        "dating_advice": "关系稳定的最强保护因素，保持真诚沟通即可"
+      },
+      "anxious": {
+        "name": "焦虑型",
+        "core_traits": ["害怕被抛弃", "持续怀疑是否被爱"],
+        "relationship_behavior": ["高情感表达", "高需求感", "渴望亲密又恐惧失去", "容易追"],
+        "dating_advice": "需觉察自己的被抛弃恐惧，学习适度留白，避免过度索取确认"
+      },
+      "avoidant": {
+        "name": "回避型",
+        "core_traits": ["重视独立性", "对亲密感不适"],
+        "relationship_behavior": ["关系越近越疏远", "习惯逃", "贬低关系重要性"],
+        "dating_advice": "回避倾向几乎不随时间自然改变，这是判断关系是否值得继续的关键因素"
+      },
+      "fearful": {
+        "name": "恐惧型（混乱型）",
+        "core_traits": ["既渴望又恐惧亲密"],
+        "relationship_behavior": ["在关系里矛盾摇摆", "时而需求强烈时而推开"],
+        "dating_advice": "建议在建立关系前先进行自我整合"
+      }
+    },
+    "attachment_judgment": {
+      "threshold": 16,
+      "rules": {
+        "low_anxious_low_avoidant": "安全型",
+        "high_anxious_low_avoidant": "焦虑型",
+        "low_anxious_high_avoidant": "回避型",
+        "high_anxious_high_avoidant": "恐惧型"
+      }
+    },
+    "key_research": [
+      {
+        "finding": "回避型和焦虑型均可预测神经质、满意度和稳定性；男性焦虑型可预测女性满意度和稳定性（交叉效应）",
+        "source": "Contemporary Family Therapy, Vol.48, 1253对情侣",
+        "year": 2026,
+        "authority": 5
+      },
+      {
+        "finding": "回避型对满意度的负面影响(r=-.48)大于焦虑型(r=-.39)",
+        "source": "European Journal of Social Psychology 元分析",
+        "authority": 5
+      },
+      {
+        "finding": "焦虑缓慢下降（尤其女性），回避几乎不变",
+        "source": "Journal of Personality and Social Psychology, 1036对伴侣20个月追踪",
+        "year": 2025,
+        "authority": 5
+      }
+    ]
+  },
+  "part2_big5": {
+    "title": "大五人格 (Big Five)",
+    "dimensions": {
+      "O": {
+        "name": "开放性 Openness",
+        "high_traits": ["好奇", "审美敏感", "喜欢新体验"],
+        "relationship_impact": "追求浪漫多样性，能接受非传统关系模式",
+        "high_threshold": 30,
+        "high_interpretation": "好奇、审美敏感、喜欢新体验；在关系中追求浪漫多样性，能接受非传统关系模式",
+        "max_score": 40
+      },
+      "C": {
+        "name": "尽责性 Conscientiousness",
+        "high_traits": ["自律", "有条理", "守承诺"],
+        "relationship_impact": "关系稳定最关键的人格预测因子之一",
+        "high_threshold": 15,
+        "high_interpretation": "自律、守承诺；这是关系稳定性的重要预测因素，对方若为此类型则值得长期投入",
+        "max_score": 20
+      },
+      "E": {
+        "name": "外向性 Extraversion",
+        "high_traits": ["善交际", "积极情绪", "热情"],
+        "relationship_impact": "主动沟通，但也可能追求更多社交刺激",
+        "high_threshold": 18,
+        "high_interpretation": "善交际、积极情绪；主动沟通但可能追求更多社交刺激",
+        "max_score": 25
+      },
+      "A": {
+        "name": "宜人性 Agreeableness",
+        "high_traits": ["信任", "利他", "合作"],
+        "relationship_impact": "冲突更少，满意度更高",
+        "high_threshold": 15,
+        "high_interpretation": "信任、利他、合作；关系中冲突更少，满意度更高",
+        "max_score": 20
+      },
+      "N": {
+        "name": "神经质 Neuroticism",
+        "high_traits": ["易焦虑", "情绪波动大"],
+        "relationship_impact": "满意度低、冲突多，是关系的风险因素",
+        "high_threshold": 15,
+        "high_interpretation": "易焦虑、情绪波动大；关系中满意度可能偏低，冲突较多，是需关注的风险因素",
+        "max_score": 20
+      }
+    },
+    "core_finding": "宜人性、尽责性、低神经质是关系满意度的最强预测因子，其预测力远超MBTI",
+    "authority": 5
+  },
+  "part3_dark_triad": {
+    "title": "黑暗三角人格",
+    "traits": {
+      "narcissism": {
+        "name": "自恋",
+        "features": ["夸大自我", "缺乏共情"],
+        "relationship_risk": "初期魅力大，长期剥削伴侣，难以真正亲密",
+        "alert_threshold": 4
+      },
+      "machiavellianism": {
+        "name": "马基雅维利主义",
+        "features": ["操控", "功利"],
+        "relationship_risk": "将关系视为工具，容易出现欺骗和利用",
+        "alert_threshold": 7
+      },
+      "psychopathy": {
+        "name": "精神病态",
+        "features": ["冲动", "冷酷", "无责任感"],
+        "relationship_risk": "风险最高，与不忠、心理虐待高度相关"
+      }
+    },
+    "key_evidence": [
+      {
+        "finding": "精神病态r=.254，马基雅维利主义r=.225，自恋r=.132均与不忠显著正相关",
+        "authority": 5
+      },
+      {
+        "finding": "高黑暗三角者利用身体接触操控伴侣",
+        "source": "Neuroscience News",
+        "year": 2025,
+        "authority": 5
+      }
+    ]
+  },
+  "part4_relationship_stages": {
+    "title": "恋爱关系的发展与心理变化",
+    "stages": [
+      {
+        "stage": "初识/吸引",
+        "psychology": "外貌、相似性驱动；多巴胺活跃",
+        "key_task": "破冰、建立轻松连接"
+      },
+      {
+        "stage": "暧昧期",
+        "psychology": "高度不确定性，调情试探，自我表露加深",
+        "key_task": "识别信号，把握节奏"
+      },
+      {
+        "stage": "确立/蜜月期",
+        "psychology": "激情主导，积极错觉，理想化",
+        "key_task": "享受但需保持一定现实感"
+      },
+      {
+        "stage": "权力冲突期",
+        "psychology": "差异浮现，幻想破灭，首次重大冲突",
+        "key_task": "Gottman修复能力在此暴露"
+      },
+      {
+        "stage": "稳定/承诺期",
+        "psychology": "深度亲密，共同目标，激情相对平和",
+        "key_task": "维持新鲜感，共同成长"
+      }
+    ],
+    "gender_differences": [
+      {
+        "aspect": "上头速度",
+        "detail": "男性更快速坠入爱河（平均1个月，女性1.9个月）",
+        "source": "Bode等, Biology of Sex Differences",
+        "year": 2025,
+        "authority": 5
+      },
+      {
+        "aspect": "情感深度与承诺",
+        "detail": "女性一旦投入，爱意强度、痴迷度、承诺感更高",
+        "authority": 5
+      },
+      {
+        "aspect": "关系依赖",
+        "detail": "稳定关系对男性心理/生理益处更大；男性更少主动分手，分手后更难恢复",
+        "source": "Wahring等, Behavioral and Brain Sciences",
+        "year": 2024,
+        "authority": 5
+      }
+    ]
+  },
+  "part5_flirting_signals": {
+    "title": "暧昧与调情——聊天中的信号解码",
+    "flirting_motivations": {
+      "sexual": { "name": "性动机", "description": "以性吸引/性接触为目的", "signals": ["身体赞美", "带有性暗示的双关语"] },
+      "fun": { "name": "乐趣动机", "description": "单纯觉得好玩，享受过程", "signals": ["轻松调侃", "无后续推进意图"] },
+      "exploratory": { "name": "探索动机", "description": "测试对方是否适合发展关系", "signals": ["询问价值观", "过往感情", "观察回应"] },
+      "relational": { "name": "关系动机", "description": "真心想深化情感联结", "signals": ["主动自我表露", "寻求深度回应"] },
+      "esteem": { "name": "自尊动机", "description": "通过获得对方关注提升自我感觉", "signals": ["享受暧昧但不愿确立", "可能养鱼"] },
+      "instrumental": { "name": "工具性动机", "description": "希望获得实际好处", "signals": ["让对方帮忙", "获取资源"] }
+    },
+    "motivation_identification": "不要只看行为，要看动机。可以通过当谈到未来/确认关系时的反应来区分关系动机与其他动机",
+    "self_disclosure": {
+      "theory": "社会渗透理论：关系推进靠渐进的、互惠的自我表露",
+      "aron_36": "Aron的36问实验：相互的、越来越私密的问答可以快速建立亲密感",
+      "danger": "焦虑型过度过早的深度表露可能吓退回避型；回避型永远停留在浅层表露则难以推进关系"
+    }
+  },
+  "part6_digital_footprint": {
+    "title": "从聊天用语、朋友圈与数字足迹推断人格",
+    "chat_language": {
+      "high_self_reference": { "pattern": "高频使用我我的", "traits": ["高自我关注", "神经质", "自恋倾向"] },
+      "positive_words": { "pattern": "大量积极情绪词", "traits": ["宜人性高", "外向性高"] },
+      "negative_words": { "pattern": "频繁使用厌倦抑郁等消极词", "traits": ["高神经质"] },
+      "questions_cooperative": { "pattern": "多用疑问句、协商性语言", "traits": ["高宜人性"] },
+      "imperative_rhetorical": { "pattern": "高频命令句、反问句", "traits": ["低宜人性", "主导性沟通风格"] },
+      "language_style_matching": { "pattern": "语言风格与对方高度同步", "traits": ["关系满意度更高"] }
+    },
+    "social_media": {
+      "high_frequency_diverse": { "pattern": "高频发帖、展示多样化", "traits": ["高外向性"] },
+      "deep_thinking_content": { "pattern": "内容以深度思考为主", "traits": ["高开放性"] },
+      "three_days_visible": { "pattern": "设置为三天可见", "traits": ["高自我监控", "社交焦虑", "边界感强"] },
+      "selfie_avatar": { "pattern": "头像用自拍", "traits": ["外向性偏高"] },
+      "negative_likes": { "pattern": "经常给负面内容点赞", "traits": ["高神经质"] },
+      "few_negative_likes": { "pattern": "极少给无关负面内容点赞", "traits": ["高尽责性"] },
+      "small_circle_interaction": { "pattern": "积极互动仅限小圈子", "traits": ["内向", "高宜人性"] }
+    }
+  },
+  "part7_hobbies_personality": {
+    "title": "从爱好与日常行为推断人格",
+    "music": {
+      "reflective_complex": { "genres": ["爵士", "古典", "民谣", "蓝调"], "traits": ["高开放性", "高语言能力"] },
+      "intense_rebellious": { "genres": ["摇滚", "重金属", "朋克"], "traits": ["高开放性", "高感觉寻求", "尽责性较低"] },
+      "upbeat_conventional": { "genres": ["流行", "乡村", "宗教音乐"], "traits": ["高外向性", "高宜人性"] },
+      "energetic_rhythmic": { "genres": ["说唱", "舞曲", "电子"], "traits": ["高外向性", "偏向寻求刺激"] }
+    },
+    "movies_tv": {
+      "comedy": { "traits": ["高宜人性"] },
+      "action_adventure": { "traits": ["高开放性", "感觉寻求"] },
+      "documentary": { "traits": ["高开放性", "知识好奇心"] },
+      "horror": { "traits": ["高感觉寻求"] },
+      "literary_scifi": { "traits": ["高开放性"] },
+      "romance": { "traits": ["高宜人性", "高共情"] }
+    },
+    "sports": {
+      "hiit_crossfit": { "traits": ["高外向性"], "authority": 5 },
+      "endurance": { "traits": ["较高尽责性", "较低外向性"], "authority": 5 },
+      "yoga_tai_chi": { "traits": ["内在觉察", "低外向性/高开放性"] },
+      "team_sports": { "traits": ["高外向性", "高宜人性"] },
+      "climbing_surfing": { "traits": ["高开放性", "高感觉寻求"] }
+    },
+    "games": {
+      "moba": { "traits": ["高外向性", "竞争驱动"], "authority": 4 },
+      "rpg_mmorpg": { "traits": ["高开放性", "叙事共情高"] },
+      "strategy": { "traits": ["高尽责性", "系统化思维"] },
+      "trpg": { "traits": ["高外向性", "高开放性", "共情能力强"], "authority": 5 },
+      "puzzle_indie": { "traits": ["高开放性", "认知需求高"] }
+    },
+    "food": {
+      "spicy": { "traits": ["感觉寻求", "冒险精神", "果断"], "authority": 5 },
+      "bitter": { "traits": ["可能与马基雅维利主义等反社会特质有关（警示信号）"], "authority": 5 },
+      "sweet": { "traits": ["宜人性偏高"], "authority": 5 },
+      "exotic": { "traits": ["高开放性"] },
+      "regular_diet": { "traits": ["高尽责性"] }
+    },
+    "spending": {
+      "experiential": { "traits": ["高开放性"], "authority": 5 },
+      "practical_saving": { "traits": ["高尽责性"], "authority": 5 },
+      "social_spending": { "traits": ["高外向性", "宜人性"], "authority": 5 },
+      "impulsive_emotional": { "traits": ["高神经质"], "authority": 5 }
+    },
+    "clothing": {
+      "unique_avant_garde": { "traits": ["高开放性"], "authority": 5 },
+      "bright_eye_catching": { "traits": ["高外向性"], "authority": 5 },
+      "classic_tailored": { "traits": ["高尽责性"] },
+      "comfortable_friendly": { "traits": ["高宜人性"] },
+      "dark_mood_varying": { "traits": ["高神经质"] }
+    },
+    "pets": {
+      "dog_person": { "traits": ["心理韧性更高", "可能更外向"], "authority": 5 },
+      "cat_person": { "traits": ["神经质更高", "较内向", "独立"], "authority": 5 },
+      "exotic_pets": { "traits": ["极高感觉寻求", "高开放性"] }
+    },
+    "daily_habits": {
+      "punctual_planned": { "traits": ["高尽责性"], "authority": 5 },
+      "voluntary_solitude": { "note": "内向≠回避；若为非自愿则警惕社交焦虑/回避", "authority": 5 },
+      "flexible_social_solo": { "traits": ["安全型依恋倾向"] },
+      "external_attribution": { "traits": ["外控点，可能较被动"] },
+      "internal_attribution": { "traits": ["内控点，较主动负责"] },
+      "night_owl": { "traits": ["开放性较高"] },
+      "morning_person": { "traits": ["尽责性较高"] }
+    }
+  },
+  "part8_mbti_zodiac": {
+    "title": "人格测评工具的科学使用",
+    "mbti": {
+      "academic_evaluation": "信效度不理想，不宜用作严谨的关系筛选工具",
+      "practical_value": "可作为理解沟通风格差异的启发式框架，非常适合用来做聊天破冰话题",
+      "relationship_correlation": "仅存在弱到中等关联，F/T维度的相似性与满意度有微弱正相关",
+      "big5_mapping": {
+        "EI": "外向性",
+        "TF": "宜人性(负)",
+        "JP": "尽责性"
+      },
+      "compatibility": {
+        "NT": ["NF", "SP"],
+        "NF": ["NT", "NF"],
+        "SJ": ["SJ", "SP"],
+        "SP": ["SP", "NF"]
+      }
+    },
+    "zodiac": {
+      "scientific_conclusion": "纯属巴纳姆效应+虚幻相关",
+      "evidence": "瑞典近66000对婚姻大数据未发现星座与婚姻质量/离婚率的任何关联",
+      "social_use": "可作为轻松话题的切入点，但绝不应该作为关系决策依据",
+      "element_mapping": {
+        "fire": { "signs": ["白羊", "狮子", "射手"], "traits": ["热情直接", "主动性高"] },
+        "earth": { "signs": ["金牛", "处女", "摩羯"], "traits": ["务实稳重", "稳定性高"] },
+        "air": { "signs": ["双子", "天秤", "水瓶"], "traits": ["灵活多变", "社交性高"] },
+        "water": { "signs": ["巨蟹", "天蝎", "双鱼"], "traits": ["感性细腻", "共情力高"] }
+      }
+    }
+  },
+  "part9_relationship_decisions": {
+    "title": "关系决策——如何判断该继续还是终止",
+    "rusbult_model": {
+      "formula": "承诺度 = 满意度 + 替代选择质量 + 投入度",
+      "description": "即使满意度低，如果替代选择差且投入（时间、情感、共同财产等）很高，人仍会选择留下",
+      "key_reminder": "高投入但长期低满意度等同于沉没成本陷阱",
+      "scoring": "三维度打分法（每个维度1-10分，综合评估）"
+    },
+    "gottman_four_horsemen": {
+      "title": "四骑士（可预测离婚或分手的强信号）",
+      "behaviors": [
+        { "name": "批评", "description": "不是抱怨具体行为，而是攻击人格", "severity": "高" },
+        { "name": "蔑视", "description": "最具破坏性", "severity": "极高" },
+        { "name": "防御", "description": "推卸责任、反向指责", "severity": "高" },
+        { "name": "筑墙", "description": "情感完全撤回", "severity": "高" }
+      ],
+      "repair_attempts": "冲突后的降级行为（幽默、道歉、暂停）。修复成功率是预测关系存亡的更关键指标"
+    },
+    "warning_signals": [
+      { "signal": "满意度下降两阶段规律", "detail": "关系分离前满意度存在平稳下降→悬崖式下跌两阶段，最后阶段下降极快" },
+      { "signal": "关系不确定性升高", "detail": "当我们是否还会在一起这类念头频繁出现时，已进入高风险期" },
+      { "signal": "积极共鸣减少", "detail": "曾经觉得可爱的小事变成厌烦，互动中的笑声和共情显著降低" },
+      { "signal": "伴侣性格缺陷成为持续压力源", "detail": "尤其是对方展现出不可调整的黑暗三角特质或严重依恋回避" }
+    ],
+    "termination_framework": {
+      "dimensions": [
+        { "dimension": "双向意愿", "question": "两人是否仍真心爱对方（非习惯/恐惧孤独）？" },
+        { "dimension": "问题可解性", "question": "冲突源于性格差异（可磨合）还是价值观根本冲突（很难调）？" },
+        { "dimension": "修复能力", "question": "对方是否愿意且有能力参与关系修复？你的修复尝试是否被接纳？" },
+        { "dimension": "成本收益", "question": "继续的获益与付出的代价？是否有更美好的替代生活图景？" }
+      ],
+      "critical_finding": "回避型依恋几乎不随时间自然变化，这是判断值不值得等的关键项"
+    }
+  },
+  "part10_application_path": {
+    "title": "综合线索应用路径",
+    "steps": [
+      {
+        "step": 1,
+        "name": "初步吸引",
+        "method": "通过影视/音乐/宠物等低风险话题自然破冰，获取初步人格线索",
+        "target": "初步判断对方的外向性、开放性、宜人性"
+      },
+      {
+        "step": 2,
+        "name": "暧昧期探索",
+        "method": "运用依恋理论，观察对方对自我表露的回应、对关系确认的态度",
+        "target": "辨别调情动机（关系动机vs自尊/乐趣动机）"
+      },
+      {
+        "step": 3,
+        "name": "关系深化",
+        "method": "结合运动/消费/作息/房间线索，验证人格判断",
+        "target": "重点评估尽责性和神经质。利用语言风格匹配增进连接"
+      },
+      {
+        "step": 4,
+        "name": "冲突期检验",
+        "method": "出现分歧时，重点观察对方的四骑士行为、修复尝试意愿和能力",
+        "target": "这是关系能否长久的最重要试金石"
+      },
+      {
+        "step": 5,
+        "name": "关系存亡决策",
+        "method": "用Rusbult模型定量评估满意度、替代、投入",
+        "target": "结合依恋变化可能性和黑暗三角风险警示。当发现对方存在高精神病态、严重蔑视、拒绝修复时，倾向于建议终止"
+      }
+    ],
+    "quick_reference": {
+      "high_O": { "music": "爵士/古典/民谣", "movies": "科幻/独立/纪录片", "sports": "攀岩/冲浪/新体验", "games": "RPG/TRPG/独立", "food": "愿试异国料理", "spending": "体验型(旅游/课)", "clothing": "独特/前卫", "pets": "异宠", "habits": "夜猫子" },
+      "high_C": { "music": "—", "movies": "—", "sports": "规律健身/自训", "games": "策略/解谜", "food": "规律饮食", "spending": "实用/储蓄", "clothing": "经典/得体", "pets": "—", "habits": "守时/计划/晨型人" },
+      "high_E": { "music": "流行/舞曲/摇滚", "movies": "喜剧/动作", "sports": "HIIT/团体运动", "games": "MOBA/射击", "food": "喜辣(感觉寻求)", "spending": "社交消费", "clothing": "亮色/引人注目", "pets": "狗(高社交)", "habits": "聚会频繁" },
+      "high_A": { "music": "低唤醒高深度", "movies": "爱情/家庭剧", "sports": "瑜伽/太极", "games": "合作MMO(辅助)", "food": "喜甜", "spending": "为他人消费", "clothing": "舒适/亲和", "pets": "狗(互动)", "habits": "常助人" },
+      "high_N": { "music": "高唤醒低效价/悲伤", "movies": "—", "sports": "短时爆发/回避耐力", "games": "—", "food": "—", "spending": "冲动/情绪宣泄", "clothing": "暗色/风格波动", "pets": "猫(神经质高)", "habits": "失眠/不规律" }
+    }
+  }
+}
