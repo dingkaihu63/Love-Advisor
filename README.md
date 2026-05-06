@@ -177,8 +177,7 @@ graph TD
 
 ```bash
 # 获取工具箱
-git clone https://github.com/yourusername/love-advisor.git && cd love-advisor
-
+git clone https://github.com/dingkaihu63/Love-Advisor
 # ── 方式一：浏览器工具（推荐，零配置）──
 # 打开测评问卷，50题约5分钟，完成后点击"复制数据"
 open resources/quiz.html
