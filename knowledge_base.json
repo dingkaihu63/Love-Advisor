@@ -1,0 +1,806 @@
+{
+  "meta": {
+    "version": "1.0",
+    "description": "恋爱心理学完整知识库 - 用于恋爱军师Skill的分析参考",
+    "authority_levels": {
+      "5": "同行评审顶刊实证研究/元分析，可直接作为权威论据",
+      "4": "同行评审期刊/权威学术综述，可作为核心参考",
+      "3": "经核实的学术理论或研究机构专业出版物，可作为背景运用",
+      "2": "科普来源或通俗总结，适合作为轻松话题与引入",
+      "1": "生活观察/通俗分析，仅供参考"
+    }
+  },
+  "part1_attachment": {
+    "title": "依恋理论与人格底层框架",
+    "description": "整个知识库的路由器，后面几乎所有关于聊天、性格、决策的分析都会回到依恋类型与人格特质上",
+    "attachment_types": {
+      "secure": {
+        "name": "安全型",
+        "core_traits": ["信任他人", "自我价值感稳定"],
+        "relationship_behavior": ["能健康依赖，也能安心独处", "沟通坦诚", "冲突后修复能力强"],
+        "dating_advice": "关系稳定的最强保护因素，保持真诚沟通即可"
+      },
+      "anxious": {
+        "name": "焦虑型",
+        "core_traits": ["害怕被抛弃", "持续怀疑是否被爱"],
+        "relationship_behavior": ["高情感表达", "高需求感", "渴望亲密又恐惧失去", "容易追"],
+        "dating_advice": "需觉察自己的被抛弃恐惧，学习适度留白，避免过度索取确认"
+      },
+      "avoidant": {
+        "name": "回避型",
+        "core_traits": ["重视独立性", "对亲密感不适"],
+        "relationship_behavior": ["关系越近越疏远", "习惯逃", "贬低关系重要性"],
+        "dating_advice": "回避倾向几乎不随时间自然改变，这是判断关系是否值得继续的关键因素"
+      },
+      "fearful": {
+        "name": "恐惧型（混乱型）",
+        "core_traits": ["既渴望又恐惧亲密"],
+        "relationship_behavior": ["在关系里矛盾摇摆", "时而需求强烈时而推开"],
+        "dating_advice": "建议在建立关系前先进行自我整合"
+      }
+    },
+    "attachment_judgment": {
+      "threshold": 16,
+      "rules": {
+        "low_anxious_low_avoidant": "安全型",
+        "high_anxious_low_avoidant": "焦虑型",
+        "low_anxious_high_avoidant": "回避型",
+        "high_anxious_high_avoidant": "恐惧型"
+      }
+    },
+    "key_research": [
+      {
+        "finding": "回避型和焦虑型均可预测神经质、满意度和稳定性；男性焦虑型可预测女性满意度和稳定性（交叉效应）",
+        "source": "Contemporary Family Therapy, Vol.48, 1253对情侣",
+        "year": 2026,
+        "authority": 5
+      },
+      {
+        "finding": "回避型对满意度的负面影响(r=-.48)大于焦虑型(r=-.39)",
+        "source": "European Journal of Social Psychology 元分析",
+        "authority": 5
+      },
+      {
+        "finding": "焦虑缓慢下降（尤其女性），回避几乎不变",
+        "source": "Journal of Personality and Social Psychology, 1036对伴侣20个月追踪",
+        "year": 2025,
+        "authority": 5
+      }
+    ]
+  },
+  "part2_big5": {
+    "title": "大五人格 (Big Five)",
+    "dimensions": {
+      "O": {
+        "name": "开放性 Openness",
+        "high_traits": ["好奇", "审美敏感", "喜欢新体验"],
+        "relationship_impact": "追求浪漫多样性，能接受非传统关系模式",
+        "high_threshold": 30,
+        "high_interpretation": "好奇、审美敏感、喜欢新体验；在关系中追求浪漫多样性，能接受非传统关系模式",
+        "max_score": 40
+      },
+      "C": {
+        "name": "尽责性 Conscientiousness",
+        "high_traits": ["自律", "有条理", "守承诺"],
+        "relationship_impact": "关系稳定最关键的人格预测因子之一",
+        "high_threshold": 15,
+        "high_interpretation": "自律、守承诺；这是关系稳定性的重要预测因素，对方若为此类型则值得长期投入",
+        "max_score": 20
+      },
+      "E": {
+        "name": "外向性 Extraversion",
+        "high_traits": ["善交际", "积极情绪", "热情"],
+        "relationship_impact": "主动沟通，但也可能追求更多社交刺激",
+        "high_threshold": 18,
+        "high_interpretation": "善交际、积极情绪；主动沟通但可能追求更多社交刺激",
+        "max_score": 25
+      },
+      "A": {
+        "name": "宜人性 Agreeableness",
+        "high_traits": ["信任", "利他", "合作"],
+        "relationship_impact": "冲突更少，满意度更高",
+        "high_threshold": 15,
+        "high_interpretation": "信任、利他、合作；关系中冲突更少，满意度更高",
+        "max_score": 20
+      },
+      "N": {
+        "name": "神经质 Neuroticism",
+        "high_traits": ["易焦虑", "情绪波动大"],
+        "relationship_impact": "满意度低、冲突多，是关系的风险因素",
+        "high_threshold": 15,
+        "high_interpretation": "易焦虑、情绪波动大；关系中满意度可能偏低，冲突较多，是需关注的风险因素",
+        "max_score": 20
+      }
+    },
+    "core_finding": "宜人性、尽责性、低神经质是关系满意度的最强预测因子，其预测力远超MBTI",
+    "authority": 5
+  },
+  "part3_dark_triad": {
+    "title": "黑暗三角人格",
+    "traits": {
+      "narcissism": {
+        "name": "自恋",
+        "features": ["夸大自我", "缺乏共情"],
+        "relationship_risk": "初期魅力大，长期剥削伴侣，难以真正亲密",
+        "alert_threshold": 4
+      },
+      "machiavellianism": {
+        "name": "马基雅维利主义",
+        "features": ["操控", "功利"],
+        "relationship_risk": "将关系视为工具，容易出现欺骗和利用",
+        "alert_threshold": 7
+      },
+      "psychopathy": {
+        "name": "精神病态",
+        "features": ["冲动", "冷酷", "无责任感"],
+        "relationship_risk": "风险最高，与不忠、心理虐待高度相关"
+      }
+    },
+    "key_evidence": [
+      {
+        "finding": "精神病态r=.254，马基雅维利主义r=.225，自恋r=.132均与不忠显著正相关",
+        "authority": 5
+      },
+      {
+        "finding": "高黑暗三角者利用身体接触操控伴侣",
+        "source": "Neuroscience News",
+        "year": 2025,
+        "authority": 5
+      }
+    ]
+  },
+  "part4_relationship_stages": {
+    "title": "恋爱关系的发展与心理变化",
+    "stages": [
+      {
+        "stage": "初识/吸引",
+        "psychology": "外貌、相似性驱动；多巴胺活跃",
+        "key_task": "破冰、建立轻松连接"
+      },
+      {
+        "stage": "暧昧期",
+        "psychology": "高度不确定性，调情试探，自我表露加深",
+        "key_task": "识别信号，把握节奏"
+      },
+      {
+        "stage": "确立/蜜月期",
+        "psychology": "激情主导，积极错觉，理想化",
+        "key_task": "享受但需保持一定现实感"
+      },
+      {
+        "stage": "权力冲突期",
+        "psychology": "差异浮现，幻想破灭，首次重大冲突",
+        "key_task": "Gottman修复能力在此暴露"
+      },
+      {
+        "stage": "稳定/承诺期",
+        "psychology": "深度亲密，共同目标，激情相对平和",
+        "key_task": "维持新鲜感，共同成长"
+      }
+    ],
+    "gender_differences": [
+      {
+        "aspect": "上头速度",
+        "detail": "男性更快速坠入爱河（平均1个月，女性1.9个月）",
+        "source": "Bode等, Biology of Sex Differences",
+        "year": 2025,
+        "authority": 5
+      },
+      {
+        "aspect": "情感深度与承诺",
+        "detail": "女性一旦投入，爱意强度、痴迷度、承诺感更高",
+        "authority": 5
+      },
+      {
+        "aspect": "关系依赖",
+        "detail": "稳定关系对男性心理/生理益处更大；男性更少主动分手，分手后更难恢复",
+        "source": "Wahring等, Behavioral and Brain Sciences",
+        "year": 2024,
+        "authority": 5
+      }
+    ]
+  },
+  "part5_flirting_signals": {
+    "title": "暧昧与调情——聊天中的信号解码",
+    "flirting_motivations": {
+      "sexual": { "name": "性动机", "description": "以性吸引/性接触为目的", "signals": ["身体赞美", "带有性暗示的双关语"] },
+      "fun": { "name": "乐趣动机", "description": "单纯觉得好玩，享受过程", "signals": ["轻松调侃", "无后续推进意图"] },
+      "exploratory": { "name": "探索动机", "description": "测试对方是否适合发展关系", "signals": ["询问价值观", "过往感情", "观察回应"] },
+      "relational": { "name": "关系动机", "description": "真心想深化情感联结", "signals": ["主动自我表露", "寻求深度回应"] },
+      "esteem": { "name": "自尊动机", "description": "通过获得对方关注提升自我感觉", "signals": ["享受暧昧但不愿确立", "可能养鱼"] },
+      "instrumental": { "name": "工具性动机", "description": "希望获得实际好处", "signals": ["让对方帮忙", "获取资源"] }
+    },
+    "motivation_identification": "不要只看行为，要看动机。可以通过当谈到未来/确认关系时的反应来区分关系动机与其他动机",
+    "self_disclosure": {
+      "theory": "社会渗透理论：关系推进靠渐进的、互惠的自我表露",
+      "aron_36": "Aron的36问实验：相互的、越来越私密的问答可以快速建立亲密感",
+      "danger": "焦虑型过度过早的深度表露可能吓退回避型；回避型永远停留在浅层表露则难以推进关系"
+    }
+  },
+  "part6_digital_footprint": {
+    "title": "从聊天用语、朋友圈与数字足迹推断人格",
+    "chat_language": {
+      "high_self_reference": { "pattern": "高频使用我我的", "traits": ["高自我关注", "神经质", "自恋倾向"] },
+      "positive_words": { "pattern": "大量积极情绪词", "traits": ["宜人性高", "外向性高"] },
+      "negative_words": { "pattern": "频繁使用厌倦抑郁等消极词", "traits": ["高神经质"] },
+      "questions_cooperative": { "pattern": "多用疑问句、协商性语言", "traits": ["高宜人性"] },
+      "imperative_rhetorical": { "pattern": "高频命令句、反问句", "traits": ["低宜人性", "主导性沟通风格"] },
+      "language_style_matching": { "pattern": "语言风格与对方高度同步", "traits": ["关系满意度更高"] }
+    },
+    "social_media": {
+      "high_frequency_diverse": { "pattern": "高频发帖、展示多样化", "traits": ["高外向性"] },
+      "deep_thinking_content": { "pattern": "内容以深度思考为主", "traits": ["高开放性"] },
+      "three_days_visible": { "pattern": "设置为三天可见", "traits": ["高自我监控", "社交焦虑", "边界感强"] },
+      "selfie_avatar": { "pattern": "头像用自拍", "traits": ["外向性偏高"] },
+      "negative_likes": { "pattern": "经常给负面内容点赞", "traits": ["高神经质"] },
+      "few_negative_likes": { "pattern": "极少给无关负面内容点赞", "traits": ["高尽责性"] },
+      "small_circle_interaction": { "pattern": "积极互动仅限小圈子", "traits": ["内向", "高宜人性"] }
+    }
+  },
+  "part7_hobbies_personality": {
+    "title": "从爱好与日常行为推断人格",
+    "music": {
+      "reflective_complex": { "genres": ["爵士", "古典", "民谣", "蓝调"], "traits": ["高开放性", "高语言能力"] },
+      "intense_rebellious": { "genres": ["摇滚", "重金属", "朋克"], "traits": ["高开放性", "高感觉寻求", "尽责性较低"] },
+      "upbeat_conventional": { "genres": ["流行", "乡村", "宗教音乐"], "traits": ["高外向性", "高宜人性"] },
+      "energetic_rhythmic": { "genres": ["说唱", "舞曲", "电子"], "traits": ["高外向性", "偏向寻求刺激"] }
+    },
+    "movies_tv": {
+      "comedy": { "traits": ["高宜人性"] },
+      "action_adventure": { "traits": ["高开放性", "感觉寻求"] },
+      "documentary": { "traits": ["高开放性", "知识好奇心"] },
+      "horror": { "traits": ["高感觉寻求"] },
+      "literary_scifi": { "traits": ["高开放性"] },
+      "romance": { "traits": ["高宜人性", "高共情"] }
+    },
+    "sports": {
+      "hiit_crossfit": { "traits": ["高外向性"], "authority": 5 },
+      "endurance": { "traits": ["较高尽责性", "较低外向性"], "authority": 5 },
+      "yoga_tai_chi": { "traits": ["内在觉察", "低外向性/高开放性"] },
+      "team_sports": { "traits": ["高外向性", "高宜人性"] },
+      "climbing_surfing": { "traits": ["高开放性", "高感觉寻求"] }
+    },
+    "games": {
+      "moba": { "traits": ["高外向性", "竞争驱动"], "authority": 4 },
+      "rpg_mmorpg": { "traits": ["高开放性", "叙事共情高"] },
+      "strategy": { "traits": ["高尽责性", "系统化思维"] },
+      "trpg": { "traits": ["高外向性", "高开放性", "共情能力强"], "authority": 5 },
+      "puzzle_indie": { "traits": ["高开放性", "认知需求高"] }
+    },
+    "food": {
+      "spicy": { "traits": ["感觉寻求", "冒险精神", "果断"], "authority": 5 },
+      "bitter": { "traits": ["可能与马基雅维利主义等反社会特质有关（警示信号）"], "authority": 5 },
+      "sweet": { "traits": ["宜人性偏高"], "authority": 5 },
+      "exotic": { "traits": ["高开放性"] },
+      "regular_diet": { "traits": ["高尽责性"] }
+    },
+    "spending": {
+      "experiential": { "traits": ["高开放性"], "authority": 5 },
+      "practical_saving": { "traits": ["高尽责性"], "authority": 5 },
+      "social_spending": { "traits": ["高外向性", "宜人性"], "authority": 5 },
+      "impulsive_emotional": { "traits": ["高神经质"], "authority": 5 }
+    },
+    "clothing": {
+      "unique_avant_garde": { "traits": ["高开放性"], "authority": 5 },
+      "bright_eye_catching": { "traits": ["高外向性"], "authority": 5 },
+      "classic_tailored": { "traits": ["高尽责性"] },
+      "comfortable_friendly": { "traits": ["高宜人性"] },
+      "dark_mood_varying": { "traits": ["高神经质"] }
+    },
+    "pets": {
+      "dog_person": { "traits": ["心理韧性更高", "可能更外向"], "authority": 5 },
+      "cat_person": { "traits": ["神经质更高", "较内向", "独立"], "authority": 5 },
+      "exotic_pets": { "traits": ["极高感觉寻求", "高开放性"] }
+    },
+    "daily_habits": {
+      "punctual_planned": { "traits": ["高尽责性"], "authority": 5 },
+      "voluntary_solitude": { "note": "内向≠回避；若为非自愿则警惕社交焦虑/回避", "authority": 5 },
+      "flexible_social_solo": { "traits": ["安全型依恋倾向"] },
+      "external_attribution": { "traits": ["外控点，可能较被动"] },
+      "internal_attribution": { "traits": ["内控点，较主动负责"] },
+      "night_owl": { "traits": ["开放性较高"] },
+      "morning_person": { "traits": ["尽责性较高"] }
+    }
+  },
+  "part8_mbti_zodiac": {
+    "title": "人格测评工具的科学使用",
+    "mbti": {
+      "academic_evaluation": "信效度不理想，不宜用作严谨的关系筛选工具",
+      "practical_value": "可作为理解沟通风格差异的启发式框架，非常适合用来做聊天破冰话题",
+      "relationship_correlation": "仅存在弱到中等关联，F/T维度的相似性与满意度有微弱正相关",
+      "big5_mapping": {
+        "EI": "外向性",
+        "TF": "宜人性(负)",
+        "JP": "尽责性"
+      },
+      "compatibility": {
+        "NT": ["NF", "SP"],
+        "NF": ["NT", "NF"],
+        "SJ": ["SJ", "SP"],
+        "SP": ["SP", "NF"]
+      }
+    },
+    "zodiac": {
+      "scientific_conclusion": "纯属巴纳姆效应+虚幻相关",
+      "evidence": "瑞典近66000对婚姻大数据未发现星座与婚姻质量/离婚率的任何关联",
+      "social_use": "可作为轻松话题的切入点，但绝不应该作为关系决策依据",
+      "element_mapping": {
+        "fire": { "signs": ["白羊", "狮子", "射手"], "traits": ["热情直接", "主动性高"] },
+        "earth": { "signs": ["金牛", "处女", "摩羯"], "traits": ["务实稳重", "稳定性高"] },
+        "air": { "signs": ["双子", "天秤", "水瓶"], "traits": ["灵活多变", "社交性高"] },
+        "water": { "signs": ["巨蟹", "天蝎", "双鱼"], "traits": ["感性细腻", "共情力高"] }
+      }
+    }
+  },
+  "part9_relationship_decisions": {
+    "title": "关系决策——如何判断该继续还是终止",
+    "rusbult_model": {
+      "formula": "承诺度 = 满意度 + 替代选择质量 + 投入度",
+      "description": "即使满意度低，如果替代选择差且投入（时间、情感、共同财产等）很高，人仍会选择留下",
+      "key_reminder": "高投入但长期低满意度等同于沉没成本陷阱",
+      "scoring": "三维度打分法（每个维度1-10分，综合评估）"
+    },
+    "gottman_four_horsemen": {
+      "title": "四骑士（可预测离婚或分手的强信号）",
+      "behaviors": [
+        { "name": "批评", "description": "不是抱怨具体行为，而是攻击人格", "severity": "高" },
+        { "name": "蔑视", "description": "最具破坏性", "severity": "极高" },
+        { "name": "防御", "description": "推卸责任、反向指责", "severity": "高" },
+        { "name": "筑墙", "description": "情感完全撤回", "severity": "高" }
+      ],
+      "repair_attempts": "冲突后的降级行为（幽默、道歉、暂停）。修复成功率是预测关系存亡的更关键指标"
+    },
+    "warning_signals": [
+      { "signal": "满意度下降两阶段规律", "detail": "关系分离前满意度存在平稳下降→悬崖式下跌两阶段，最后阶段下降极快" },
+      { "signal": "关系不确定性升高", "detail": "当我们是否还会在一起这类念头频繁出现时，已进入高风险期" },
+      { "signal": "积极共鸣减少", "detail": "曾经觉得可爱的小事变成厌烦，互动中的笑声和共情显著降低" },
+      { "signal": "伴侣性格缺陷成为持续压力源", "detail": "尤其是对方展现出不可调整的黑暗三角特质或严重依恋回避" }
+    ],
+    "termination_framework": {
+      "dimensions": [
+        { "dimension": "双向意愿", "question": "两人是否仍真心爱对方（非习惯/恐惧孤独）？" },
+        { "dimension": "问题可解性", "question": "冲突源于性格差异（可磨合）还是价值观根本冲突（很难调）？" },
+        { "dimension": "修复能力", "question": "对方是否愿意且有能力参与关系修复？你的修复尝试是否被接纳？" },
+        { "dimension": "成本收益", "question": "继续的获益与付出的代价？是否有更美好的替代生活图景？" }
+      ],
+      "critical_finding": "回避型依恋几乎不随时间自然变化，这是判断值不值得等的关键项"
+    }
+  },
+  "part10_application_path": {
+    "title": "综合线索应用路径",
+    "steps": [
+      {
+        "step": 1,
+        "name": "初步吸引",
+        "method": "通过影视/音乐/宠物等低风险话题自然破冰，获取初步人格线索",
+        "target": "初步判断对方的外向性、开放性、宜人性"
+      },
+      {
+        "step": 2,
+        "name": "暧昧期探索",
+        "method": "运用依恋理论，观察对方对自我表露的回应、对关系确认的态度",
+        "target": "辨别调情动机（关系动机vs自尊/乐趣动机）"
+      },
+      {
+        "step": 3,
+        "name": "关系深化",
+        "method": "结合运动/消费/作息/房间线索，验证人格判断",
+        "target": "重点评估尽责性和神经质。利用语言风格匹配增进连接"
+      },
+      {
+        "step": 4,
+        "name": "冲突期检验",
+        "method": "出现分歧时，重点观察对方的四骑士行为、修复尝试意愿和能力",
+        "target": "这是关系能否长久的最重要试金石"
+      },
+      {
+        "step": 5,
+        "name": "关系存亡决策",
+        "method": "用Rusbult模型定量评估满意度、替代、投入",
+        "target": "结合依恋变化可能性和黑暗三角风险警示。当发现对方存在高精神病态、严重蔑视、拒绝修复时，倾向于建议终止"
+      }
+    ],
+    "quick_reference": {
+      "high_O": { "music": "爵士/古典/民谣", "movies": "科幻/独立/纪录片", "sports": "攀岩/冲浪/新体验", "games": "RPG/TRPG/独立", "food": "愿试异国料理", "spending": "体验型(旅游/课)", "clothing": "独特/前卫", "pets": "异宠", "habits": "夜猫子" },
+      "high_C": { "music": "—", "movies": "—", "sports": "规律健身/自训", "games": "策略/解谜", "food": "规律饮食", "spending": "实用/储蓄", "clothing": "经典/得体", "pets": "—", "habits": "守时/计划/晨型人" },
+      "high_E": { "music": "流行/舞曲/摇滚", "movies": "喜剧/动作", "sports": "HIIT/团体运动", "games": "MOBA/射击", "food": "喜辣(感觉寻求)", "spending": "社交消费", "clothing": "亮色/引人注目", "pets": "狗(高社交)", "habits": "聚会频繁" },
+      "high_A": { "music": "低唤醒高深度", "movies": "爱情/家庭剧", "sports": "瑜伽/太极", "games": "合作MMO(辅助)", "food": "喜甜", "spending": "为他人消费", "clothing": "舒适/亲和", "pets": "狗(互动)", "habits": "常助人" },
+      "high_N": { "music": "高唤醒低效价/悲伤", "movies": "—", "sports": "短时爆发/回避耐力", "games": "—", "food": "—", "spending": "冲动/情绪宣泄", "clothing": "暗色/风格波动", "pets": "猫(神经质高)", "habits": "失眠/不规律" }
+    }
+  },
+  "part11_similarity_complementarity": {
+    "title": "相似性与互补性——兴趣爱好如何影响关系",
+    "description": "实证研究揭示：相似吸引是主旋律，互补只在特定维度和条件下生效；共同活动比静态相似更重要",
+    "core_finding": "88.72%的伴侣在大部分特征上都是相似的。相似吸引是主旋律，互补只在特定条件下起辅助作用",
+    "similarity_attraction_effect": {
+      "description": "人们被与自己态度、价值观、兴趣相似的人吸引。高度不相似的伴侣会引发排斥反应",
+      "key_studies": [
+        {
+          "finding": "Byrne(1971)经典实验：对假想陌生人态度问卷的回答与自己高度一致时，对陌生人的好感显著更高",
+          "authority": 5
+        },
+        {
+          "finding": "Caspi实验：男女被试对潜在约会对象与自身的相似度打分，r=+1.0到-1.0。高度相似的被评价为更有好感，高度不相似的引发排斥",
+          "source": "Krueger & Caspi (1993), Personality and Individual Differences",
+          "authority": 5
+        }
+      ],
+      "musical_bonding_model": {
+        "theory": "音乐偏好→推断价值观一致→促进人际吸引",
+        "finding": "Boer等(2011)：音乐偏好是价值观的信号代理，相似的音乐品味使人推断双方核心价值观一致",
+        "spotify_evidence": "用户更愿意去探索与自己有相似音乐品味的人的歌单，且播放行为显著增加",
+        "authority": 5
+      }
+    },
+    "assortative_mating": {
+      "description": "同质匹配——人类系统性地偏好与自己相似的伴侣，这是跨文化和跨物种的普遍规律",
+      "meta_analysis_2024": {
+        "finding": "综合199项研究的480种伴侣相关性+UK Biobank 8万对夫妇数据，88.72%的特征在伴侣间呈正相关",
+        "source": "2024年3月综合类综述",
+        "authority": 5
+      },
+      "nature_hb_2023": {
+        "finding": "对133种特征的全基因组分析，82%-89%的特征在伴侣间更可能相似而非相异，仅约3%呈负相关",
+        "source": "Horwitz等, Nature Human Behaviour (2023.8.31)",
+        "authority": 5
+      },
+      "correlation_levels": {
+        "very_high": { "traits": ["政治态度", "宗教信仰", "教育水平", "吸烟/饮酒"], "r_range": "0.44-0.58" },
+        "moderate": { "traits": ["价值观", "兴趣爱好", "饮食偏好"], "r_range": "0.30-0.45" },
+        "low": { "traits": ["大五人格特质", "BMI", "身体健康"], "r_range": "0.10-0.20" },
+        "near_zero": { "traits": ["内向-外向倾向"], "r_range": "≈0" }
+      },
+      "key_insight": "核心价值/生活方式的相似远强于人格特质的相似。'性格不合'作为分手理由站不住脚——真正的冲突往往来自价值观差异",
+      "personality_similarity_overestimated": {
+        "finding": "2023年Personality Science研究(N=397, 940次互动)：人格相似性(无论是实际还是感知)对初次互动的好感度没有显著影响",
+        "insight": "初次约会中感受到的'默契'很可能来自对方的社交魅力/外表吸引力，而非真实的人格匹配——别在第一面就给对方下人格诊断",
+        "authority": 5
+      }
+    },
+    "complementarity_boundaries": {
+      "description": "互补只在特定维度、特定语境下成立，不是找'性格相反的人'的借口",
+      "key_finding": "Dryer & Horowitz(1997)：仅在'支配/顺从'这一沟通角色维度上存在互补效应。在态度、价值观、兴趣爱好上互补完全无效",
+      "commitment_effect": "互补性对关系的积极影响主要体现在承诺度(commitment)的形成阶段，而非满意度的维持阶段",
+      "practical_meaning": "一个爱规划的人配一个随性的人，是沟通角色的分工，不是核心价值的差异。角色互补只有在核心价值观一致的基础上才成立"
+    },
+    "self_expansion_theory": {
+      "core": "Aron夫妇提出：人天生有扩展自我的动机。通过参与新颖/挑战性活动，与伴侣共同创造新体验，能持续提升关系满意度",
+      "key_experiment": {
+        "design": "53对夫妇随机分组：兴奋活动组(1.5h/周×10周) vs 愉快但无刺激活动组",
+        "result": "兴奋活动组的婚姻满意度显著提升，对照组无变化",
+        "conclusion": "只有兴奋/新颖的活动才有提升关系满意度的效果，'一起消磨时间'无效",
+        "source": "Reissman, Aron & Bergen (1993)",
+        "authority": 5
+      },
+      "implication": "关系后期，拥有不同爱好反而是优势——它为关系提供'自我扩展'的素材和新鲜感来源"
+    },
+    "shared_activities_effect": {
+      "finding_1": "2024年伊利诺伊大学研究：共同参与休闲活动的频率与关系满意度呈正相关，但关键变量是双方对共同活动的'互相喜欢程度'",
+      "finding_2": "2024年PMC研究：共同参与运动型活动的夫妇，积极互动(positive stroke)更多、消极互动更少",
+      "key_point": "共同活动创造关系满意度，而非静态的相似性本身。重要的不是你俩爱好一不一样，而是一起做什么"
+    },
+    "framework_6x6": {
+      "description": "6个理论×6个判断维度：评估特定爱好对关系质量的实际影响",
+      "dimensions": [
+        {"name": "核心价值观/生活方式(权重最高)", "green": "政治/宗教态度、消费模式、饮酒习惯高度一致", "yellow": "某些价值观有分歧但双方愿开放讨论", "red": "道德底线、忠诚、信任等核心问题上存在原则性分歧"},
+        {"name": "爱好相似度(权重中等)", "green": "2-3个核心爱好高度一致，且投入程度接近", "yellow": "主要爱好类型不同但一方愿尝试另一方世界", "red": "双方完全无交集且拒绝接触对方世界"},
+        {"name": "共同探索潜力(权重中等，关系后期)", "green": "差异方愿邀请对方进入自己世界，另一方积极参与", "yellow": "一方开始熟悉但未主动深入；共处时间超过6个月仍不确定", "red": "差异方拒绝改变或反感；差异已被证实无法弥合"},
+        {"name": "共同活动质量(权重中高)", "green": "经常共同参与刺激性活动，双方感知到互相兴趣高", "yellow": "共同活动以低刺激为主，一方愿尝试增加新颖性", "red": "共处时间极少或严重不对称，共同活动几乎完全消失"},
+        {"name": "人格底层匹配(权重高，但初期不急于下结论)", "green": "宜人性+尽责性+安全型依恋+修复能力强，至少2项得到验证", "yellow": "在爱好层面有强烈好感，但尚未在人格层面进行任何观察校准", "red": "已出现神经质、日常小冲突反复爆发、不可修复的严重信号或黑暗三角特质"},
+        {"name": "互补性匹配(权重中低，主要用于长期关系)", "green": "支配/顺从方面在适度范围内互补，双方认为有功能价值", "yellow": "未观察到明显的互补需求或角色分工尚不明确", "red": "一方完全主导、一方完全逃避，陷入'追-逃'式循环冲突"}
+      ]
+    },
+    "stage_based_strategy": {
+      "stages": [
+        {"stage": "初识/吸引", "strategy": "别把对方的爱好当作'合'或'不合'的简单筛选标准。人格相似性对初次好感的实际贡献极低", "mechanism": "注意力应放在'对方是谁'而非'对方喜欢什么'"},
+        {"stage": "暧昧/探索", "strategy": "用共同活动创造自我扩张机会。去对方擅长而你不熟悉的领域，或带对方进入你的世界。关键：活动要新颖/有挑战性", "mechanism": "自我扩张是关系深度的最强驱动因素，新颖性比舒适感更关键"},
+        {"stage": "冲突/激化", "strategy": "观察对方的核心价值观界面。如果爱好差异反映了底层价值观的对立(享受当下vs延迟满足)，这是需要认真对待的信号", "mechanism": "伴侣间相关性最高的特质(政治、宗教)比人格更能预测长期匹配"},
+        {"stage": "长期维持", "strategy": "持续创造新刺激，为关系注入共同成长体验。加入对方的世界、拥有不同爱好反而为长期关系提供素材", "mechanism": "自我扩张需要持续的新颖性输入，否则满意度自然衰减"}
+      ]
+    },
+    "key_takeaways": {
+      "1": "爱好是'价值信号'而非'人格信号'。相似的音乐/电影/运动偏好传递的是'我们可能价值观相近'的信号",
+      "2": "人格相似性在初次好感中的作用被高估了。别在第一面就给对方做人格诊断",
+      "3": "互补只在沟通角色维度上成立。'性格互补'不等于'价值观不同'",
+      "4": "共同去做>静态匹配。一起探索带来的关系收益远大于拥有完全一样的爱好清单"
+    },
+    "key_references": [
+      {"finding": "88.72%伴侣特征正相关，仅3%负相关", "source": "2024综合综述+Nature Human Behaviour 2023", "authority": 5},
+      {"finding": "态度相似→吸引(吸引范式)", "source": "Byrne (1971). The Attraction Paradigm", "authority": 5},
+      {"finding": "音乐偏好→价值推断→人际吸引", "source": "Boer等 (2011), PSPB", "authority": 5},
+      {"finding": "互补仅支配/顺从维度有效", "source": "Dryer & Horowitz (1997), JPSP", "authority": 5},
+      {"finding": "兴奋活动提升满意度，愉快活动无效", "source": "Reissman, Aron & Bergen (1993)", "authority": 5},
+      {"finding": "人格相似性对初识好感无显著影响", "source": "Personality Science, 2023 (N=397)", "authority": 5}
+    ]
+  },
+  "part12_date_venues": {
+    "title": "约会场景心理学——选址即策略",
+    "description": "基于实证研究的约会场景选择指南：不同心理机制对应不同场景，不同关系阶段需要不同策略",
+    "core_mechanisms": {
+      "misattribution_of_arousal": {
+        "name": "错误归因效应",
+        "key_study": "Dutton & Aron(1974)：高悬索桥上男性50%回拨女实验员电话，安全桥上仅12.5%",
+        "mechanism": "在恐惧/刺激情境下心跳加速、手心出汗等生理反应，被大脑错误归因为'对同在现场的人心动'",
+        "practical": "悬索桥→过山车/密室逃脱/攀岩/恐怖片；不是'吊桥效应'的都市传说，已被实验反复验证",
+        "authority": 5
+      },
+      "self_expansion": {
+        "name": "自我扩张理论",
+        "key_study": "Aron夫妇：共同参与新颖/挑战性活动→关系满意度提升；Tomlinson等(2019)进一步证实新颖性(而非唤醒度)才是核心机制",
+        "practical": "一起学新技能(陶艺/烹饪/舞蹈)、探没去过的地方",
+        "authority": 5
+      },
+      "setting_appropriateness": {
+        "name": "情境适当性",
+        "key_study": "Adams & Gillath(2024, PSPB)：系统评估48类场景的约会适当性",
+        "levels": {
+          "high": {"venues": ["约会酒吧", "咖啡馆", "私人住宅"], "explanation": "社交信号容易表达和被识别"},
+          "medium": {"venues": ["公园", "美术馆", "游戏空间", "街道"], "explanation": "社交信号可能被模糊"},
+          "low": {"venues": ["工作场所", "教室", "图书馆"], "explanation": "恋爱信号几乎肯定会被抑制"}
+        },
+        "authority": 5
+      },
+      "environment_vs_conversation": {
+        "key_study": "University of Georgia(2025)：200名陌生人被随机分配到温馨环境vs冷清办公室进行45分钟对话",
+        "finding_1": "温馨环境显著提升即时好感、社交兴趣和继续交往意愿——冷清环境中同样优质的对话被低估",
+        "finding_2": "一个月后追踪：温馨环境组34人vs冷清环境组19人希望进一步发展",
+        "insight": "选址不只为当次约会服务——环境对长期印象有延迟强化效应",
+        "authority": 5
+      }
+    },
+    "additional_effects": {
+      "warmth_effect": {
+        "name": "温度-温暖效应",
+        "finding": "Yale Bargh实验：手持热饮的人比手持冷饮的人更倾向于判断陌生人'性格温暖'。约在温暖的咖啡馆比约在冷饮店更容易对对方产生好感",
+        "authority": 5
+      },
+      "mere_exposure": {
+        "name": "曝光效应",
+        "finding": "仅凭在课堂上出现的频率，出现次数越多的人获得的好感度越高。这就是'近水楼台先得月'的科学解释",
+        "note": "前提：第一印象不差。第一印象差时曝光反而降低好感度",
+        "authority": 5
+      },
+      "social_proof": {
+        "name": "社会证明",
+        "finding": "女性在判断男性吸引力时，若该男性身边有其他女性围绕，潜意识判断为'已被其他女性验证过的男性'从而加分",
+        "practical": "带同性朋友一起参加社交活动→对你(男性)加分；对方同性朋友对你的评价影响关键",
+        "authority": 5
+      }
+    },
+    "stage_based_recommendations": {
+      "stage_1_first_date": {
+        "stage": "初识/破冰(第一次约会)",
+        "principles": "安全、可控、低压、确保能深度对话",
+        "recommended": [
+          {"venue": "温暖咖啡馆", "mechanism": "温度-温暖效应+情境适当性高+安全可控+利于深度对话"},
+          {"venue": "博物馆/美术馆", "mechanism": "高文化信号+高开放性者友好+提供天然话题"},
+          {"venue": "小型手作/烘焙体验", "mechanism": "自带话题(共同任务)+观察偏好和互动风格"}
+        ],
+        "avoid": ["电影院(无法互动)", "嘈杂酒吧(无法深度对话)", "火锅(氛围偏正式/压力偏高)", "对方工作场合(情境适当性低)"]
+      },
+      "stage_2_exploration": {
+        "stage": "暧昧/探索(第二三次约会)",
+        "principles": "创造兴奋感、加速关系升温、共创新体验",
+        "recommended": [
+          {"venue": "主题公园/过山车", "mechanism": "错误归因效应(恐惧→心动)；适合双方都偏活跃型", "caution": "特别内向/回避型者可能不适"},
+          {"venue": "密室逃脱", "mechanism": "错误归因+协作挑战+共同成就感；高考验适配性"},
+          {"venue": "徒步/登山", "mechanism": "自我扩张(有挑战+新颖)+长时间对话窗口；高感觉寻求者友好"},
+          {"venue": "一起学新技能(烹饪/陶艺/调酒)", "mechanism": "自我扩张理论核心路径；高开放性/探索型者友好，长期关系加分"}
+        ]
+      },
+      "stage_3_deepening": {
+        "stage": "关系深化/冲突磨合",
+        "principles": "观察压力应对、验证底层价值观",
+        "recommended": [
+          {"venue": "短途旅行", "mechanism": "长时间相处中观察压力应对/习惯/行为/冲突处理模式"},
+          {"venue": "一起做义工", "mechanism": "检验共同价值观+观察责任感和共情力"},
+          {"venue": "对方选择的活动", "mechanism": "了解TA的世界(双向化)+观察TA的选择偏好(熟悉vs新奇→感觉寻求)"}
+        ]
+      },
+      "stage_4_maintenance": {
+        "stage": "长期关系维持",
+        "principles": "持续注入新颖性、防止关系倦怠",
+        "recommended": [
+          {"activity": "每周末去没去过的地方(新公园/新街区/新馆子)", "mechanism": "自我扩张持续输入"},
+          {"activity": "一起报班学新东西(语言/乐器/舞蹈)", "mechanism": "双向自我扩张+关系共同投资"},
+          {"activity": "制定'情侣惊喜约会'轮流用对方的目的地惊喜对方", "mechanism": "制造不确定性→激活多巴胺"}
+        ]
+      }
+    },
+    "personality_matched_venues": {
+      "high_O": {"venues": ["独立影院", "摄影展", "小众livehouse", "异国料理探店"], "principle": "新奇感和审美刺激是吸引力核心"},
+      "high_C": {"venues": ["提前规划行程", "有明确目标的工坊(如一天做出成品)"], "principle": "可预测性和完成感带来安全感"},
+      "high_E": {"venues": ["聚会", "音乐节", "群体活动", "DIY工作室"], "principle": "社交密度和互动频率是能量来源"},
+      "high_A": {"venues": ["义工", "动物咖啡馆", "温馨氛围餐厅"], "principle": "温暖、低压、合作型氛围最舒适"},
+      "high_N": {"venues": ["低压/熟悉的环境(对方常去的店)", "低刺激性活动"], "principle": "减少外部焦虑源，环境可预期"},
+      "high_SS": {"venues": ["极限运动", "密室逃脱", "恐怖片", "辛辣食物挑战"], "principle": "高刺激阈值需要高强度体验"},
+      "anxious_attachment": {"venues": ["提前告知计划细节", "避免模棱两可的'到时候再说'"], "principle": "可预测性降低不确定性焦虑"},
+      "avoidant_attachment": {"venues": ["低压活动", "短时长约会", "避免过度亲密型场所(如情侣电影院)"], "principle": "尊重独立性，不施加亲密压力"}
+    },
+    "key_principles": {
+      "1": "对话质量>环境装饰。但温馨环境为关系质量提供加成效应，且延迟影响长期印象",
+      "2": "刺激性场景是短期催化剂，但不能替代价值观匹配和人格兼容这些结构化关系要素",
+      "3": "情境适当性影响信号被接收的概率。在工作/学校等低适当性场景开展关系，难度远大于高适当性场景",
+      "4": "匹配人格/依恋类型约会选址事半功倍。带回避型去高刺激强社交活动适得其反",
+      "5": "无论什么阶段，约会内容包含'新事物'(新地方、新体验、新学习)能持续满足成长需求→转化为关系满意度",
+      "key_references": [
+        {"finding": "吊桥效应原始实验", "source": "Dutton & Aron (1974), JPSP", "authority": 5},
+        {"finding": "情境适当性48类场景评估", "source": "Adams & Gillath (2024), PSPB", "authority": 5},
+        {"finding": "环境温暖感vs对话质量对约会的影响", "source": "University of Georgia (2025)", "authority": 5},
+        {"finding": "手持热饮→判断他人性格温暖", "source": "Bargh, Yale (2008), Science", "authority": 5},
+        {"finding": "自我扩张理论+兴奋活动提升满意度", "source": "Aron & Aron (1986); Reissman等 (1993)", "authority": 5}
+      ]
+    }
+  },
+  "part13_physical_attractiveness": {
+    "title": "颜值在关系中的角色——实证解读",
+    "description": "基于进化心理学和现代实证研究，客观理解颜值在吸引力、匹配和关系发展中的作用",
+    "evolutionary_signals": {
+      "symmetry": {"name": "对称性", "mechanism": "发育过程中抵抗环境压力的指标——只有基因质量高的个体才能维持高对称性", "finding": "Grammer & Thornhill(1994)首次证实面部对称性显著影响吸引力评分", "authority": 5},
+      "averageness": {"name": "平均化", "mechanism": "多张面孔叠加得到的'平均脸'最受欢迎——平均化意味着杂合性更高→免疫功能更强", "finding": "Langlois & Roggman(1990)发现叠加越多人脸越被评价为有吸引力", "authority": 5},
+      "sexual_dimorphism": {"name": "性别二态性", "mechanism": "女性化(大眼睛/小鼻/丰满嘴唇)→雌激素水平信号；男性化(宽下巴/突出眉骨)→睾酮水平信号", "authority": 5},
+      "multimodal": {"name": "多模态综合", "finding": "Watkins(2025, Biological Reviews, 101页)系统综述：颜值判断是视觉(面容+体态)、听觉(声音)、嗅觉(化学信号)、触觉(肢体动作)的多模态信息整合", "authority": 5}
+    },
+    "halo_effect": {
+      "name": "光环效应——'美即好'的认知偏差",
+      "classic_experiment": "Dion, Berscheid & Walster(1972)：高颜值者被系统性地给予更高的社交能力、职业成功和可信度评价",
+      "meta_analysis": [
+        {"study": "Eagly等(1991), k=76, N=8,208", "finding": "光环效应r=.28"},
+        {"study": "Langlois等(2000), k=30, N=1,880", "finding": "光环效应r=.24"},
+        {"study": "2025年最新元分析(多维结构)", "finding": "颜值→社交能力影响最强(r≈.38)，→智力次之(r≈.20)，→正直/关心他人最弱(r≈.17)"}
+      ],
+      "cross_cultural": "2024-2025年德国+日本跨文化研究：光环效应在两种文化中强度高度一致，且对面孔和身体的颜值光环效应同样强烈",
+      "beauty_filter_era": {
+        "finding": "2024年Royal Society Open Science(N=2,748)：AI生成同一人的原图与美颜图，美颜版本不仅颜值评分升高，信赖度和能力评分也系统性升高",
+        "implication_1": "当美颜滤镜普及后，高颜值者的光环效应可能被进一步放大",
+        "implication_2": "约会App上的美颜照片可能在初次匹配中创造不公平优势，而这优势与本人真实条件无关"
+      },
+      "authority": 5
+    },
+    "matching_hypothesis": {
+      "description": "现实中更普遍的配对模式是'综合分数相当'而非简单的'颜值换资源'",
+      "key_findings": [
+        {"finding": "Buss(1989)37种文化(N=10,047)：女性更看重前景/勤奋/地位，男性更看重年轻/外貌/体型——基础性别差异获得跨文化验证", "authority": 5},
+        {"finding": "瑞典大型人口数据(2016)：'颜值换资源'的交换模式仅获得混合支持——现实比理论预测更复杂微妙"},
+        {"finding": "控制伴侣双方匹配度后，'颜值换地位'的交换关系完全消失——匹配(matching)比交换更普遍"},
+        {"finding": "1亿次模拟配对实验：只要总分接近就接受。女性55%阈值以上才能找到伴侣，但找到后颜值未继续提高匹配率"}
+      ],
+      "key_insight": "你想找什么样的人，首先取决于你自己在综合评分系统的位置。不是简单用颜值去换资源——匹配逻辑比交换逻辑更基础",
+      "authority": 5
+    },
+    "short_vs_long_term": {
+      "description": "颜值的权重随着关系预期的长短而系统性变化",
+      "key_study_1": {
+        "finding": "2022年《心理学报》：164名大学生评价短期/长期约会意愿。男性在短期配偶中对外貌的重视度显著高于长期配偶中",
+        "explanation": "男性表态'漂亮就行'多半指向短期关系预期",
+        "authority": 5
+      },
+      "key_study_2": {
+        "finding": "'More than just a pretty face' (Evolution and Human Behavior)：男性的配偶偏好随语境(短期vs长期)系统切换——长期选择中人格/品质权重大幅提升",
+        "explanation": "面部细节/身材/皮肤等'快照'信号在长期关系中权重下降，而人格/价值观评估权重上升",
+        "authority": 5
+      },
+      "gender_difference": "女性无论短期还是长期关系，都更重视人格/资源/可靠性等信息，没有出现男性那样的语境切换",
+      "practical_implication": "如果对方频繁谈论你的外貌/身材而不关注你的其他方面，这是短期取向的重要信号"
+    },
+    "dating_app_dual_pathway": {
+      "finding": "2025年Computers in Human Behavior(IF=8.9)：LMM模型解构约会App中的视觉决策——面部吸引力(facial attractiveness)与社会吸引力(social attractiveness)走双路径",
+      "key_insight": "高颜值条件下，社交/文化资本信号的边际贡献递减。但颜值不够强时，生活品质/价值观展示/兴趣标签等'社交资本'可以补偿",
+      "authority": 5
+    },
+    "neuroeconomic_evidence": {
+      "finding": "2024年日本Cognitive Science Society综述：神经影像学证据表明颜值激活大脑奖励系统(reward system)，这是一个快速、自动、无法逃避的潜意识过程",
+      "implication": "'一见钟情'的神经基础是奖励系统的快速激活，但这只是关系的'启动按钮'，不等于长期的情感联结",
+      "authority": 5
+    },
+    "practical_framework": {
+      "description": "颜值在关系不同阶段的权重和应用",
+      "initial_attraction": "颜值是第一道'筛选门槛'而非'长期承诺的信号'。约会App的快速决策放大了颜值的作用，但不等于真正的匹配",
+      "early_dating": "光环效应→给予高颜值者更多'犯错空间'和'容忍度'；需警惕自己是否在将外表吸引力误判为性格好/人品好",
+      "long_term_relationship": "颜值权重系统性下降，人格品质(宜人性/尽责性/情绪稳定性)和价值观一致性成为关系满意度的主要预测因子",
+      "red_flags": ["对方面容/体态评论频繁指向短期取向", "自己因对方高颜值而过度容忍不尊重/冷漠等行为→光环效应的陷阱", "通过整容/滤镜等方式展示与本人严重不符的形象→建立关系的基础不真实"]
+    },
+    "key_references": [
+      {"finding": "颜值多模态综合综述(101页)", "source": "Watkins, C.D. (2025). Biological Reviews, 100:113-130", "authority": 5},
+      {"finding": "美颜时代的颜值光环效应(N=2,748)", "source": "Gulati等 (2024). Royal Society Open Science", "authority": 5},
+      {"finding": "约会App双路径决策模型", "source": "Computers in Human Behavior (2025), IF=8.9", "authority": 5},
+      {"finding": "37种文化配偶偏好(Buss经典)", "source": "Buss (1989). Behavioral and Brain Sciences, N=10,047", "authority": 5},
+      {"finding": "颜值→大脑奖励系统(综述)", "source": "日本Cognitive Science Society (2024)", "authority": 5}
+    ]
+  },
+  "part14_contact_acquisition": {
+    "title": "获取联系方式——三种路径的心理学基础",
+    "description": "从陌生人到建立联系：直接搭讪、朋友介绍、线上间接接触——各有其心理学机制和最佳实践",
+    "path_1_direct": {
+      "name": "路径一：直接搭讪",
+      "core_mechanisms": [
+        {
+          "name": "错误归因效应",
+          "finding": "Dutton & Aron(1974)：悬索桥上搭讪回电率50% vs安全桥12.5%。Allen等(1989)：刺激必须是模糊/多源的才能产生错误归因，若环境刺激太明确则效果消失",
+          "practical": "在适度刺激环境中搭讪成功率更高——不是让你去蹦极，而是在有活力的社交环境中比在安静图书馆更容易"
+        },
+        {
+          "name": "近邻效应",
+          "finding": "Newcomb(1956)+Shin等(2018)验证：接触频率越高好感度越高，对高社交焦虑和社交缺失状态的人效果更强",
+          "practical": "出现在对方日常生活中(同一咖啡店/自习室/健身房)，不需急于搭讪，先让对方面熟"
+        },
+        {
+          "name": "Gueguen街头实验",
+          "findings": [
+            "男性从面包店出来时索要电话成功率更高",
+            "穿制服/佩戴名牌使女性更愿透露联系方式",
+            "轻触前臂(0.5-1秒)显著提高要电话成功率",
+            "吉他盒>运动包>空手：31%>14%>9%成功率",
+            "核心结论：传递'有技能/有品位'信号比展示财富/外貌更有效"
+          ],
+          "source": "Gueguen (2013). Psychology of Music",
+          "authority": 5
+        }
+      ],
+      "uncertainty_reduction": "直接搭讪提供了最丰富的多模态信息(语言+肢体+声音+动作)，能最快降低不确定性。不确定性降低到足够水平时，获取联系方式的成功率跨过临界点"
+    },
+    "path_2_through_friends": {
+      "name": "路径二：通过朋友介绍",
+      "core_mechanisms": [
+        {
+          "name": "弱关系力量",
+          "finding": "Granovetter(1973)：弱关系(频率低/密度小/跨越不同社交圈)比强关系更有桥梁价值。Kleinberg团队130万Facebook用户数据验证了弱关系在跨圈连接中的结构优势",
+          "practical": "朋友介绍的本质是利用朋友的强关系来桥接你的弱关系——效率最高的认识方式"
+        },
+        {
+          "name": "社会证明效应",
+          "mechanism": "朋友的在场：(1)担保证明→降低对陌生人的风险感知；(2)行为捷径→通过共同朋友推断对方社交规范和价值观的兼容性；(3)校准→观察对方如何与共同朋友互动",
+          "practical": "共同朋友的背书是最强的信任加速器"
+        },
+        {
+          "name": "桥接信任",
+          "mechanism": "从朋友对你的信任(绑定信任)转化为对方对你的信任(桥接信任)——朋友介绍是个信任传递过程"
+        },
+        {
+          "name": "朋友优先路径",
+          "finding": "Stinson等(2022)：对7项研究/1897名被试的元分析——大多数恋人关系是通过'朋友优先'路径开始的，而非陌生人约会。此路径的优势在于：更低风险的前期了解、更自然的自我暴露节奏、关系建立时已有社会网络嵌入",
+          "source": "Social Psychological and Personality Science",
+          "authority": 5
+        }
+      ]
+    },
+    "path_3_online_indirect": {
+      "name": "路径三：线上间接接触",
+      "core_mechanisms": [
+        {
+          "name": "不确定性降低理论(URT)线上版",
+          "finding": "Berger & Calabrese(1975)的URT列出三类降不确定性策略：被动(观察朋友圈/主页内容)→主动(询问共同朋友)→互动(直接私信/评论/私聊)。Antheunis等(2010, N=704)验证：三类策略在线上的效果强于线下，且不确定性水平在社交吸引力与互动行为之间起中介作用",
+          "practical": "先观察(看朋友圈)→再互动(评论/点赞)→再私聊(私信)→最后要微信/电话，顺序不能乱"
+        },
+        {
+          "name": "信息具体性效应(2025新发现)",
+          "finding": "Kuge等(2025, N=963, 预注册报告)：信息的具体性(concreteness)比信息数量更重要——具体、有细节、有画面感的内容对降低不确定性更有效",
+          "practical": "朋友圈发'今天去了一家很棒的店，吃了XX'优于'今天好开心'；发'加班到凌晨三点改完方案，终于通过了'优于'好累'"
+        },
+        {
+          "name": "社会渗透理论(SPT)",
+          "mechanism": "Altman & Taylor(1973)：关系从表层到深层需要breadth(话题广度)和depth(亲密深度)两个维度的渐进推进。线上互动遵守同样的洋葱模型——轻率地跨越层级(如还没熟就要私密微信号)会导致关系破裂"
+        },
+        {
+          "name": "线上信任建构",
+          "three_paths": ["适度自我暴露→提升可信度感知", "第三方验证(共同好友/认证信息/账号历史)→提供社会证明", "跨平台一致性→降低感知欺骗风险"],
+          "practical": "三个路径同时启动时线上间接接触的效果最高——所以先关注再互动再私信的顺序比直接私信要联系方式成功率更高"
+        }
+      ]
+    },
+    "path_comparison": {
+      "overview": "三条路径不是替代关系而是递进关系",
+      "direct": {"core_advantage": "第一印象深刻+多模态信息丰富", "core_challenge": "高不确定性+高拒绝风险", "best_for": "有社交魅力、能创造吸引力环境的场景"},
+      "through_friends": {"core_advantage": "信任传递+社会证明+最常见的真实恋人形成路径", "core_challenge": "需要跨社交圈的弱关系资源", "best_for": "追求长期稳定关系、重视前期了解的谨慎型"},
+      "online_indirect": {"core_advantage": "低风险+渐进式+给对方信息控制感", "core_challenge": "需要耐心+信息具体性不够时难以建立信任", "best_for": "社交焦虑/内向者、缺乏共同朋友纽带的情况"}
+    },
+    "key_references": [
+      {"finding": "悬索桥效应原始研究", "source": "Dutton & Aron (1974), JPSP", "authority": 5},
+      {"finding": "街头搭讪成功率(吉他盒实验)", "source": "Gueguen (2013), Psychology of Music", "authority": 5},
+      {"finding": "弱关系理论", "source": "Granovetter (1973), American Journal of Sociology", "authority": 5},
+      {"finding": "朋友优先恋爱路径(7项研究元分析)", "source": "Stinson等 (2022), SPPS", "authority": 5},
+      {"finding": "信息具体性降低不确定性(预注册)", "source": "Kuge等 (2025), PCI Registered Reports, N=963", "authority": 5},
+      {"finding": "社会渗透理论", "source": "Altman & Taylor (1973)", "authority": 5}
+    ]
+  }
+}
